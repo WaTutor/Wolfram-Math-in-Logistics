@@ -1,0 +1,2009 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     79591,       2000]
+NotebookOptionsPosition[     75325,       1863]
+NotebookOutlinePosition[     75671,       1878]
+CellTagsIndexPosition[     75628,       1875]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[TextData[{
+ StyleBox["\:041c\:0430\:044f\:0442\:043d\:0438\:043a\:043e\:0432\:044b\:0439 \
+\:043c\:0430\:0440\:0448\:0440\:0443\:0442 \:0441 \:043e\:0431\:0440\:0430\
+\:0442\:043d\:044b\:043c \:0445\:043e\:043b\:043e\:0441\:0442\:044b\:043c \
+\:043f\:0440\:043e\:0431\:0435\:0433\:043e\:043c",
+  FontWeight->"Bold"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.5768185482246637`*^9, 3.5768188208039427`*^9}, {
+  3.5768188940772715`*^9, 3.576819136298897*^9}, {3.5768224938343945`*^9, 
+  3.576822506969618*^9}, {3.5768279116595807`*^9, 3.576827933515219*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graph", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\:0410", "\[DirectedEdge]", "\:0411"}], ",", 
+     RowBox[{"\:0411", "\[DirectedEdge]", "\:0410"}], ",", 
+     RowBox[{"\:0410\:0422\:041f", "\[DirectedEdge]", "\:0410"}], ",", 
+     RowBox[{"\:0410", "\[DirectedEdge]", "\:0410\:0422\:041f"}]}], "}"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"EdgeLabels", "\[Rule]", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"\:0410", "\[DirectedEdge]", "\:0411"}], "\[Rule]", 
+       "\"\<\!\(TraditionalForm\`\*SubscriptBox[\(l\), \
+\(\:0435\:0433\)]\)\>\""}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"\:0411", "\[DirectedEdge]", "\:0410"}], "\[Rule]", " ", 
+       "\"\<\!\(\*SubscriptBox[\(l\), \(\:0445\)]\)\>\""}], ",", " ", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"\:0410\:0422\:041f", "\[DirectedEdge]", "\:0410"}], "\[Rule]",
+        " ", "\"\<\!\(\*SubscriptBox[\(l\), \(\:043d1\)]\)\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"\:0410", "\[DirectedEdge]", "\:0410\:0422\:041f"}], "\[Rule]",
+        " ", "\"\<\!\(\*SubscriptBox[\(l\), \(\:043d2\)]\)\>\""}]}], 
+     "\[IndentingNewLine]", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"GraphLayout", "\[Rule]", "\"\<CircularEmbedding\>\""}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"EdgeStyle", "\[Rule]", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"\:0410", "\[DirectedEdge]", "\:0411"}], "\[Rule]", 
+       RowBox[{"{", "Blue", "}"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"Gray", ",", "Dashed"}], "}"}]}], "}"}]}], ",", " ", 
+   RowBox[{"EdgeLabelStyle", "\[Rule]", " ", 
+    RowBox[{"Directive", "[", 
+     RowBox[{"Pink", ",", "20", ",", 
+      RowBox[{"Background", "\[Rule]", " ", "White"}]}], "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"VertexStyle", "\[Rule]", "LightBrown"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"VertexLabels", "\[Rule]", 
+    RowBox[{"Placed", "[", 
+     RowBox[{"\"\<Name\>\"", ",", "Above"}], "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"VertexSize", "\[Rule]", "0.1"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"VertexLabelStyle", "\[Rule]", 
+    RowBox[{"Directive", "[", 
+     RowBox[{"Gray", ",", "14"}], "]"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"ImagePadding", "\[Rule]", "30"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5768279511910505`*^9, 3.5768280607032423`*^9}, {
+   3.5768281062085223`*^9, 3.5768281353805733`*^9}, {3.576828180979454*^9, 
+   3.5768282213523245`*^9}, {3.576828276623222*^9, 3.576828283487234*^9}, {
+   3.5768283551069593`*^9, 3.576828581182557*^9}, {3.5768287079483795`*^9, 
+   3.57682883927041*^9}, {3.576828907161729*^9, 3.576828962245426*^9}, {
+   3.5768290353471546`*^9, 3.576829097981264*^9}, {3.5768291459045486`*^9, 
+   3.576829149523755*^9}, {3.57682922067548*^9, 3.576829273465973*^9}, {
+   3.576829447141078*^9, 3.576829528698021*^9}, {3.576829566262887*^9, 
+   3.576829572112897*^9}, 3.5768327557548895`*^9}],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{$CellContext`\:0410, $CellContext`\:0411, $CellContext`\:0410\
+\:0422\:041f}, {{{1, 2}, {2, 1}, {3, 1}, {1, 3}}, Null}, {
+      EdgeLabels -> {
+        DirectedEdge[$CellContext`\:0410\:0422\:041f, $CellContext`\:0410] -> 
+         "\!\(\*SubscriptBox[\(l\), \(\:043d1\)]\)", 
+         DirectedEdge[$CellContext`\:0411, $CellContext`\:0410] -> 
+         "\!\(\*SubscriptBox[\(l\), \(\:0445\)]\)", 
+         DirectedEdge[$CellContext`\:0410, $CellContext`\:0411] -> 
+         "\!\(TraditionalForm\`\*SubscriptBox[\(l\), \(\:0435\:0433\)]\)", 
+         DirectedEdge[$CellContext`\:0410, $CellContext`\:0410\:0422\:041f] -> 
+         "\!\(\*SubscriptBox[\(l\), \(\:043d2\)]\)"}, EdgeLabelStyle -> {
+         Directive[
+          RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]]}, 
+       EdgeStyle -> {{
+          GrayLevel[0.5], 
+          Dashing[{Small, Small}]}, 
+         DirectedEdge[$CellContext`\:0410, $CellContext`\:0411] -> {
+           RGBColor[0, 0, 1]}}, GraphLayout -> "CircularEmbedding", 
+       ImagePadding -> 30, VertexLabels -> {
+         Placed["Name", Above]}, VertexLabelStyle -> {
+         Directive[
+          GrayLevel[0.5], 14]}, VertexSize -> {0.1}, VertexStyle -> {
+         RGBColor[0.94, 0.91, 0.88]}}]], Typeset`boxes, Typeset`boxes$s2d = 
+    GraphicsGroupBox[{{
+       Arrowheads[0.035557484308341034`], 
+       Directive[
+        Opacity[0.7], 
+        Hue[0.6, 0.7, 0.5]], {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           BezierCurveBox[{
+             DynamicLocation["VertexID$1", Automatic, Center], {
+             9.325873406851315*^-16, -0.2310459239308519}, 
+             DynamicLocation["VertexID$2", Automatic, Center]}]], {
+           RGBColor[0, 0, 1]}, StripOnInput -> False], "DynamicName", BoxID -> 
+         "EdgeLabelID$1"], 
+        InsetBox[
+         FormBox[
+          StyleBox[
+          
+          "\"\\!\\(TraditionalForm\\`\\*SubscriptBox[\\(l\\), \\(\:0435\:0433\
+\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$1", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}, {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           BezierCurveBox[{
+             DynamicLocation[
+             "VertexID$1", Automatic, Center], {-0.6659337642194738, 
+             0.3844770380345749}, 
+             DynamicLocation["VertexID$3", Automatic, Center]}]], {
+           GrayLevel[0.5], 
+           Dashing[{Small, Small}]}, StripOnInput -> False], "DynamicName", 
+         BoxID -> "EdgeLabelID$2"], 
+        InsetBox[
+         FormBox[
+          StyleBox["\"\\!\\(\\*SubscriptBox[\\(l\\), \\(\:043d2\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$2", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}, {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           BezierCurveBox[{
+             DynamicLocation[
+             "VertexID$2", Automatic, 
+              Center], {-3.774758283725532*^-16, -0.7689540760691489}, 
+             DynamicLocation["VertexID$1", Automatic, Center]}]], {
+           GrayLevel[0.5], 
+           Dashing[{Small, Small}]}, StripOnInput -> False], "DynamicName", 
+         BoxID -> "EdgeLabelID$3"], 
+        InsetBox[
+         FormBox[
+          StyleBox["\"\\!\\(\\*SubscriptBox[\\(l\\), \\(\:0445\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$3", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}, {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           BezierCurveBox[{
+             DynamicLocation[
+             "VertexID$3", Automatic, Center], {-0.20009163956496442`, 
+             0.11552296196542583`}, 
+             DynamicLocation["VertexID$1", Automatic, Center]}]], {
+           GrayLevel[0.5], 
+           Dashing[{Small, Small}]}, StripOnInput -> False], "DynamicName", 
+         BoxID -> "EdgeLabelID$4"], 
+        InsetBox[
+         FormBox[
+          StyleBox["\"\\!\\(\\*SubscriptBox[\\(l\\), \\(\:043d1\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$4", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}}, {
+       Directive[
+        Hue[0.6, 0.2, 0.8], 
+        EdgeForm[
+         Directive[
+          GrayLevel[0], 
+          Opacity[0.7]]]], 
+       TagBox[{
+         TagBox[
+          StyleBox[
+           
+           DiskBox[{-0.8660254037844384, -0.4999999999999994}, 
+            0.08660254037844384], 
+           RGBColor[0.94, 0.91, 0.88], StripOnInput -> False], "DynamicName", 
+          BoxID -> "VertexID$1"], 
+         InsetBox[
+          FormBox[
+           StyleBox["\:0410", 
+            Directive[
+             GrayLevel[0.5], 14], StripOnInput -> False], TraditionalForm], 
+          Offset[{0, 2}, 
+           DynamicLocation["VertexID$1", Automatic, Top]], 
+          ImageScaled[{0.5, 0}], BaseStyle -> "Graphics"]}, "DynamicName", 
+        BoxID -> "VertexLabelID$1"], 
+       TagBox[{
+         TagBox[
+          StyleBox[
+           
+           DiskBox[{0.8660254037844389, -0.5000000000000012}, 
+            0.08660254037844384], 
+           RGBColor[0.94, 0.91, 0.88], StripOnInput -> False], "DynamicName", 
+          BoxID -> "VertexID$2"], 
+         InsetBox[
+          FormBox[
+           StyleBox["\:0411", 
+            Directive[
+             GrayLevel[0.5], 14], StripOnInput -> False], TraditionalForm], 
+          Offset[{0, 2}, 
+           DynamicLocation["VertexID$2", Automatic, Top]], 
+          ImageScaled[{0.5, 0}], BaseStyle -> "Graphics"]}, "DynamicName", 
+        BoxID -> "VertexLabelID$2"], 
+       TagBox[{
+         TagBox[
+          StyleBox[
+           DiskBox[{1.8369701987210297`*^-16, 1.}, 0.08660254037844384], 
+           RGBColor[0.94, 0.91, 0.88], StripOnInput -> False], "DynamicName", 
+          BoxID -> "VertexID$3"], 
+         InsetBox[
+          FormBox[
+           StyleBox["\:0410\:0422\:041f", 
+            Directive[
+             GrayLevel[0.5], 14], StripOnInput -> False], TraditionalForm], 
+          Offset[{0, 2}, 
+           DynamicLocation["VertexID$3", Automatic, Top]], 
+          ImageScaled[{0.5, 0}], BaseStyle -> "Graphics"]}, "DynamicName", 
+        BoxID -> "VertexLabelID$3"]}}], $CellContext`flag}, 
+    TagBox[
+     DynamicBox[GraphComputation`NetworkGraphicsBox[
+      3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
+      CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
+       SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
+      ImageSizeCache->{{32.760693309010065`, 
+       327.23930669099}, {-164.47930669098997`, 142.2393066909899}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False,
+    UnsavedVariables:>{$CellContext`flag}]],
+  DefaultBaseStyle->{
+   "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> Hue[0.8, 1., 0.6]},
+  FrameTicks->None,
+  ImagePadding->30]], "Output",
+ CellChangeTimes->{
+  3.5768280653052506`*^9, {3.5768283905658216`*^9, 3.576828428895089*^9}, {
+   3.576828462419548*^9, 3.5768284765999727`*^9}, {3.5768285090012302`*^9, 
+   3.5768285830545597`*^9}, 3.5768287828597107`*^9, 3.576828911061736*^9, 
+   3.5768289642890296`*^9, {3.576829048934778*^9, 3.5768290996036673`*^9}, 
+   3.5768291513021584`*^9, {3.576829261750352*^9, 3.5768292755095763`*^9}, {
+   3.5768294635055065`*^9, 3.5768295311472254`*^9}, 3.576829574094101*^9, 
+   3.5768327583132935`*^9},ImageCache->GraphicsData["CompressedBitmap", "\<\
+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
+Afoq/HY=\
+\>"]]
+}, Open  ]],
+
+Cell[TextData[{
+ "\:041e\:043f\:0440\:0435\:0434\:0435\:043b\:0438\:0442\:044c \:043d\:0435\
+\:043e\:0431\:0445\:043e\:0434\:0438\:043c\:043e\:0435 \:043a\:043e\:043b\
+\:0438\:0447\:0435\:0441\:0442\:0432\:043e \:0430\:0432\:0442\:043e\:043c\
+\:043e\:0431\:0438\:043b\:0435\:0439 \:0434\:043b\:044f \:043f\:0435\:0440\
+\:0435\:0432\:043e\:0437\:043a\:0438 320\:0442. \
+\:0433\:0440\:0443\:0437\:0430 \:0432\:0442\:043e\:0440\:043e\:0433\:043e \
+\:043a\:043b\:0430\:0441\:0441\:0430. \:0410\:0432\:0442\:043e\:043c\:043e\
+\:0431\:0438\:043b\:0438 \:0440\:0430\:0431\:043e\:0442\:0430\:044e\:0442 \
+\:043d\:0430 \:043c\:0430\:044f\:0442\:043d\:0438\:043a\:043e\:0432\:043e\
+\:043c \:043c\:0430\:0440\:0448\:0440\:0443\:0442\:0435 \:0441 \:043e\:0431\
+\:0440\:0430\:0442\:043d\:044b\:043c \:0445\:043e\:043b\:043e\:0441\:0442\
+\:044b\:043c \:043f\:0440\:043e\:0431\:0435\:0433\:043e\:043c: \n\:0433\:0440\
+\:0443\:0437\:043e\:043f\:043e\:0434\:044a\:0451\:043c\:043d\:043e\:0441\:0442\
+\:044c \:0430\:0432\:0442\:043e\:043c\:043e\:0431\:0438\:043b\:044f \
+q=4\:0442; \n\:0434\:043b\:0438\:043d\:0430 \:0433\:0440\:0443\:0436\:0435\
+\:043d\:043e\:0439 \:0435\:0437\:0434\:043a\:0438 \:0438 \:0440\:0430\:0441\
+\:0441\:0442\:043e\:044f\:043d\:0438\:0435 \:0435\:0437\:0434\:043a\:0438 \
+\:0431\:0435\:0437 \:0433\:0440\:0443\:0437\:0430 ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SubscriptBox["l", "\:0435\:0433"], "=", 
+     RowBox[{"15", "\:043a\:043c"}]}], ";"}], TraditionalForm]]],
+ " \n\:0441\:0442\:0430\:0442\:0438\:0447\:0435\:0441\:043a\:0438\:0439 \
+\:043a\:043e\:044d\:0444\:0438\:0446\:0438\:0435\:043d\:0442 \:0438\:0441\
+\:043f\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:043d\:0438\:044f \:0433\
+\:0440\:0443\:0437\:043e\:043f\:043e\:0434\:044a\:0451\:043c\:043d\:043e\:0441\
+\:0442\:0438 ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Gamma]", "\:0441\:0442"], TraditionalForm]]],
+ "=0,8; \n\:0432\:0440\:0435\:043c\:044f \:043f\:0440\:043e\:0441\:0442\:043e\
+\:044f \:043f\:043e\:0434 \:043f\:043e\:0433\:0440\:0443\:0437\:043a\:043e\
+\:0439 \:0438 \:0440\:0430\:0437\:0433\:0440\:0443\:0437\:043a\:043e\:0439 ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["t", 
+    RowBox[{"\:043f", "-", "\:0440"}]], TraditionalForm]]],
+ "=30\:043c\:0438\:043d; \n\:0442\:0435\:0445\:043d\:0438\:0447\:0435\:0441\
+\:043a\:0430\:044f \:0441\:043a\:043e\:0440\:043e\:0441\:0442\:044c ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["V", "\:0442\:0435\:0445"], TraditionalForm]]],
+ "=25\:043a\:043c/\:0447; \n\:0432\:0440\:0435\:043c\:044f \:0440\:0430\:0431\
+\:043e\:0442\:044b \:0430\:0432\:0442\:043e\:043c\:043e\:0431\:0438\:043b\
+\:044f \:043d\:0430 \:043c\:0430\:0440\:0448\:0440\:0443\:0442\:0435 ",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["T", "\:043c"], TraditionalForm]]],
+ "=8,5\:0447."
+}], "Text",
+ CellChangeTimes->{3.576827944528838*^9}],
+
+Cell["\<\
+1. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:0432\:0440\
+\:0435\:043c\:044f \:043e\:0431\:043e\:0440\:043e\:0442\:0430 \:0430\:0432\
+\:0442\:043e\:043c\:043e\:0431\:0438\:043b\:044f \:043d\:0430 \:043c\:0430\
+\:0440\:0448\:0440\:0443\:0442\:0435, \:0447:\
+\>", "Text",
+ CellChangeTimes->{{3.5768191563449326`*^9, 3.5768191882323885`*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   SubscriptBox["t", "\:043e"], "=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"2", "\[Times]", 
+      SubscriptBox["l", "\:0435\:0433"]}], 
+     SubscriptBox["V", "\:0442\:0435\:0445"]], "+", 
+    SubscriptBox["t", 
+     RowBox[{"\:043f", "-", "\:0440"}]]}]}],
+  FontSize->16]], "Input",
+ CellChangeTimes->{{3.576819207311222*^9, 3.5768192651873236`*^9}},
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:0412\:0440\:0435\:043c\:044f\:041e\:0431\:043e\:0440\:043e\:0442\
+\:0430", "=", " ", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"2", "\[Times]", "15"}], "25"], "+", "0.5"}]}]], "Input",
+ CellChangeTimes->{{3.5768192839073563`*^9, 3.5768193114726048`*^9}, {
+  3.5768193720631113`*^9, 3.576819379722725*^9}},
+ FontSize->14],
+
+Cell[BoxData["1.7`"], "Output",
+ CellChangeTimes->{3.5768193811735272`*^9},
+ FontSize->14]
+}, Open  ]],
+
+Cell["\<\
+2. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:043a\:043e\
+\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e \:043e\:0431\:043e\:0440\
+\:043e\:0442\:043e\:0432 \:0437\:0430 \:0432\:0440\:0435\:043c\:044f \:0440\
+\:0430\:0431\:043e\:0442\:044b \:0430\:0432\:0442\:043e\:043c\:043e\:0431\
+\:0438\:043b\:044f \:043d\:0430 \:043c\:0430\:0440\:0448\:0440\:0443\:0442\
+\:0435: \
+\>", "Text",
+ CellChangeTimes->{{3.5768194058371706`*^9, 3.5768194063987713`*^9}, {
+  3.5768197327201443`*^9, 3.576819767789006*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   SubscriptBox["n", "\:043e"], "=", 
+   FractionBox[
+    SubscriptBox["T", "\:043c"], 
+    SubscriptBox["t", "\:043e"]]}],
+  FontSize->16]], "Input",
+ CellChangeTimes->{{3.576819780737029*^9, 3.5768198102834806`*^9}},
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:041e\
+\:0431\:043e\:0440\:043e\:0442\:043e\:0432", " ", "=", 
+  RowBox[{"Round", "[", " ", 
+   FractionBox["8.5", 
+    "\:0412\:0440\:0435\:043c\:044f\:041e\:0431\:043e\:0440\:043e\:0442\:0430\
+"], "]"}]}]], "Input",
+ CellChangeTimes->{{3.576819823715104*^9, 3.576819871419988*^9}, {
+  3.5768204101367345`*^9, 3.576820416579546*^9}},
+ FontSize->14],
+
+Cell[BoxData["5"], "Output",
+ CellChangeTimes->{3.576819873947193*^9, 3.576820425455961*^9},
+ FontSize->14]
+}, Open  ]],
+
+Cell["\<\
+3. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:0432\:043e\
+\:0437\:043c\:043e\:0436\:043d\:0443\:044e \:043c\:0430\:0441\:0441\:0443 \
+\:0433\:0440\:0443\:0437\:0430, \:043f\:0435\:0440\:0435\:0432\:043e\:0437\
+\:0438\:043c\:0443\:044e \:0430\:0432\:0442\:043e\:043c\:043e\:0431\:0438\
+\:043b\:0435\:043c \:0437\:0430 \:0434\:0435\:043d\:044c, \:0442:\
+\>", "Text",
+ CellChangeTimes->{{3.576819949123725*^9, 3.5768200307118683`*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   SubscriptBox["Q", "\:0441\:0443\:0442"], "=", 
+   RowBox[{"q", "\[Times]", 
+    SubscriptBox["\[Gamma]", "\:0441\:0442"], "\[Times]", 
+    SubscriptBox["n", "\:043e"]}]}],
+  FontSize->16]], "Input",
+ CellChangeTimes->{{3.576820277052901*^9, 3.5768203239153833`*^9}},
+ FontSize->12],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:0421\:0443\:0442\:043e\:0447\:043d\:044b\:0439\:041e\:0431\:044a\
+\:0451\:043c\:041f\:0435\:0440\:0435\:0432\:043e\:0437\:043a\:0438", "=", 
+  RowBox[{
+  "4", "\[Times]", "0.8", "\[Times]", 
+   "\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:041e\:0431\
+\:043e\:0440\:043e\:0442\:043e\:0432"}]}]], "Input",
+ CellChangeTimes->{{3.5768203450846205`*^9, 3.5768203915883017`*^9}, {
+   3.5768204323043737`*^9, 3.576820433271575*^9}, {3.5768267000668526`*^9, 
+   3.5768267045596604`*^9}, {3.5787409103366156`*^9, 3.5787409144082227`*^9}, 
+   3.579853160109516*^9},
+ FontSize->14],
+
+Cell[BoxData["16.`"], "Output",
+ CellChangeTimes->{3.576820435237179*^9, 3.576826706930865*^9},
+ FontSize->14]
+}, Open  ]],
+
+Cell["\<\
+4. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:043d\:0435\
+\:043e\:0431\:0445\:043e\:0434\:0438\:043c\:043e\:0435 \:043a\:043e\:043b\
+\:0438\:0447\:0435\:0441\:0442\:0432\:043e \:0430\:0432\:0442\:043e\:043c\
+\:043e\:0431\:0438\:043b\:0435\:0439 \:0434\:043b\:044f \:043f\:0435\:0440\
+\:0435\:0432\:043e\:0437\:043a\:0438 320\:0442. \
+\:0433\:0440\:0443\:0437\:0430:\
+\>", "Text",
+ CellChangeTimes->{{3.576820454331612*^9, 3.5768204931912804`*^9}, {
+  3.579853279179683*^9, 3.5798532825196877`*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"A", "=", 
+   FractionBox["Q", 
+    SubscriptBox["Q", "\:0441\:0443\:0442"]]}],
+  FontSize->16]], "Input",
+ CellChangeTimes->{{3.5768205084325075`*^9, 3.5768205505213814`*^9}},
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:0410\
+\:0432\:0442\:043e\:043c\:043e\:0431\:0438\:043b\:0435\:0439", "=", 
+  FractionBox["320", 
+   "\:0421\:0443\:0442\:043e\:0447\:043d\:044b\:0439\:041e\:0431\:044a\:0451\
+\:043c\:041f\:0435\:0440\:0435\:0432\:043e\:0437\:043a\:0438"]}]], "Input",
+ CellChangeTimes->{{3.576820559491397*^9, 3.5768205815030355`*^9}, {
+   3.5768267104720707`*^9, 3.576826714434478*^9}, {3.5787453972917366`*^9, 
+   3.578745405590952*^9}, 3.579853310449727*^9},
+ FontSize->14],
+
+Cell[BoxData["20.`"], "Output",
+ CellChangeTimes->{3.5768205837650394`*^9, 3.5768267164468813`*^9},
+ FontSize->14]
+}, Open  ]],
+
+Cell["\<\
+5. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:043a\:043e\
+\:044d\:0444\:0444\:0438\:0446\:0438\:0435\:043d\:0442 \:0438\:0441\:043f\
+\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:043d\:0438\:044f \:043f\:0440\
+\:043e\:0431\:0435\:0433\:0430:\
+\>", "Text",
+ CellChangeTimes->{{3.57682060702468*^9, 3.5768206280691175`*^9}, 
+   3.5768224455211096`*^9}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"\[Beta]", "=", 
+   FractionBox[
+    SubscriptBox["l", "\:0435\:0433"], 
+    RowBox[{"2", "\[Times]", 
+     SubscriptBox["l", "\:0435\:0433"]}]]}],
+  FontSize->16]], "Input",
+ CellChangeTimes->{{3.5768206434663444`*^9, 3.576820688347623*^9}},
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[Beta]", " ", "=", " ", 
+  RowBox[{
+   FractionBox["15", 
+    RowBox[{"2", "\[Times]", "15"}]], "//", "N"}]}]], "Input",
+ CellChangeTimes->{{3.5768207055856533`*^9, 3.5768207403737144`*^9}},
+ FontSize->14],
+
+Cell[BoxData["0.5`"], "Output",
+ CellChangeTimes->{{3.576820732776501*^9, 3.576820741216116*^9}},
+ FontSize->14]
+}, Open  ]],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 2}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{Inherited, 4}],
+
+Cell[TextData[{
+ StyleBox["\:041c\:0430\:044f\:0442\:043d\:0438\:043a\:043e\:0432\:044b\:0439 \
+\:043c\:0430\:0440\:0448\:0440\:0443\:0442 \:0441 \:043e\:0431\:0440\:0430\
+\:0442\:043d\:044b\:043c \:043d\:0435\:043f\:043e\:043b\:043d\:043e\:0441\
+\:0442\:044c\:044e \:0433\:0440\:0443\:0436\:0435\:043d\:044b\:043c \:043f\
+\:0440\:043e\:0431\:0435\:0433\:043e\:043c",
+  FontWeight->"Bold"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.576821927334999*^9, 3.576822478873968*^9}, {
+  3.5768296030477514`*^9, 3.576829604467354*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graph", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\:0410", "\[DirectedEdge]", "\:0411"}], ",", 
+     RowBox[{"\:0411", "\[DirectedEdge]", "\:0412"}], ",", 
+     RowBox[{"\:0412", "\[DirectedEdge]", "\:0410"}], ",", 
+     RowBox[{"\:0410\:0422\:041f", "\[DirectedEdge]", "\:0410"}], ",", 
+     RowBox[{"\:0412", "\[DirectedEdge]", "\:0410\:0422\:041f"}]}], "}"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"EdgeLabels", "\[Rule]", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"\:0410", "\[DirectedEdge]", "\:0411"}], "\[Rule]", 
+       "\"\<\!\(TraditionalForm\`\*SubsuperscriptBox[\(l\), \(\:0435\:0433\), \
+\(`\)]\)\>\""}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"\:0411", "\[DirectedEdge]", "\:0412"}], "\[Rule]", " ", 
+       "\"\<\!\(TraditionalForm\`\*SubsuperscriptBox[\(l\), \(\:0435\:0433\), \
+\(``\)]\)\>\""}], ",", " ", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"\:0410\:0422\:041f", "\[DirectedEdge]", "\:0410"}], "\[Rule]",
+        " ", "\"\<\!\(\*SubscriptBox[\(l\), \(\:043d1\)]\)\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"\:0412", "\[DirectedEdge]", "\:0410\:0422\:041f"}], "\[Rule]",
+        " ", "\"\<\!\(\*SubscriptBox[\(l\), \(\:043d2\)]\)\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"\:0412", "\[DirectedEdge]", "\:0410"}], "\[Rule]", " ", 
+       "\"\<\!\(\*SubscriptBox[\(l\), \(\:0445\)]\)\>\""}]}], 
+     "\[IndentingNewLine]", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"EdgeStyle", "\[Rule]", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"\:0410", "\[DirectedEdge]", "\:0411"}], "\[Rule]", 
+       RowBox[{"{", "Blue", "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"\:0411", "\[DirectedEdge]", "\:0412"}], "\[Rule]", 
+       RowBox[{"{", "Blue", "}"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"Gray", ",", "Dashed"}], "}"}]}], "}"}]}], ",", " ", 
+   RowBox[{"EdgeLabelStyle", "\[Rule]", " ", 
+    RowBox[{"Directive", "[", 
+     RowBox[{"Pink", ",", "20", ",", 
+      RowBox[{"Background", "\[Rule]", " ", "White"}]}], "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"VertexStyle", "\[Rule]", "LightBrown"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"VertexLabels", "\[Rule]", 
+    RowBox[{"Placed", "[", 
+     RowBox[{"\"\<Name\>\"", ",", "Above"}], "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"VertexSize", "\[Rule]", "0.1"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"VertexLabelStyle", "\[Rule]", 
+    RowBox[{"Directive", "[", 
+     RowBox[{"Gray", ",", "14"}], "]"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"ImagePadding", "\[Rule]", "30"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.5768296422818203`*^9, 3.5768298620560064`*^9}, {
+  3.5768298954400654`*^9, 3.5768299601801786`*^9}, {3.576830076384783*^9, 
+  3.5768300908460083`*^9}, {3.5768309619369383`*^9, 3.576830973122158*^9}, {
+  3.5768311412592535`*^9, 3.5768311414776535`*^9}, {3.576831562882194*^9, 
+  3.576831635531522*^9}, {3.5768325656061554`*^9, 3.576832566058556*^9}, {
+  3.5786572656346564`*^9, 3.578657272935469*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{$CellContext`\:0410, $CellContext`\:0411, $CellContext`\:0412, \
+$CellContext`\:0410\:0422\:041f}, {{{1, 2}, {2, 3}, {3, 1}, {4, 1}, {3, 4}}, 
+       Null}, {EdgeLabels -> {
+        DirectedEdge[$CellContext`\:0410\:0422\:041f, $CellContext`\:0410] -> 
+         "\!\(\*SubscriptBox[\(l\), \(\:043d1\)]\)", 
+         DirectedEdge[$CellContext`\:0412, $CellContext`\:0410\:0422\:041f] -> 
+         "\!\(\*SubscriptBox[\(l\), \(\:043d2\)]\)", 
+         DirectedEdge[$CellContext`\:0410, $CellContext`\:0411] -> 
+         "\!\(TraditionalForm\`\*SubsuperscriptBox[\(l\), \(\:0435\:0433\), \
+\(`\)]\)", DirectedEdge[$CellContext`\:0411, $CellContext`\:0412] -> 
+         "\!\(TraditionalForm\`\*SubsuperscriptBox[\(l\), \(\:0435\:0433\), \
+\(``\)]\)", DirectedEdge[$CellContext`\:0412, $CellContext`\:0410] -> 
+         "\!\(\*SubscriptBox[\(l\), \(\:0445\)]\)"}, EdgeLabelStyle -> {
+         Directive[
+          RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]]}, 
+       EdgeStyle -> {{
+          GrayLevel[0.5], 
+          Dashing[{Small, Small}]}, 
+         DirectedEdge[$CellContext`\:0411, $CellContext`\:0412] -> {
+           RGBColor[0, 0, 1]}, 
+         DirectedEdge[$CellContext`\:0410, $CellContext`\:0411] -> {
+           RGBColor[0, 0, 1]}}, ImagePadding -> 30, VertexLabels -> {
+         Placed["Name", Above]}, VertexLabelStyle -> {
+         Directive[
+          GrayLevel[0.5], 14]}, VertexSize -> {0.1}, VertexStyle -> {
+         RGBColor[0.94, 0.91, 0.88]}}]], Typeset`boxes, Typeset`boxes$s2d = 
+    GraphicsGroupBox[{{
+       Arrowheads[0.03466165959742682], 
+       Directive[
+        Opacity[0.7], 
+        Hue[0.6, 0.7, 0.5]], {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           LineBox[{
+             DynamicLocation["VertexID$1", Automatic, Center], 
+             DynamicLocation["VertexID$2", Automatic, Center]}]], {
+           RGBColor[0, 0, 1]}, StripOnInput -> False], "DynamicName", BoxID -> 
+         "EdgeLabelID$1"], 
+        InsetBox[
+         FormBox[
+          StyleBox[
+          "\"\\!\\(TraditionalForm\\`\\*SubsuperscriptBox[\\(l\\), \\(\:0435\
+\:0433\\), \\(`\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$1", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}, {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           LineBox[{
+             DynamicLocation["VertexID$2", Automatic, Center], 
+             DynamicLocation["VertexID$3", Automatic, Center]}]], {
+           RGBColor[0, 0, 1]}, StripOnInput -> False], "DynamicName", BoxID -> 
+         "EdgeLabelID$2"], 
+        InsetBox[
+         FormBox[
+          StyleBox[
+          "\"\\!\\(TraditionalForm\\`\\*SubsuperscriptBox[\\(l\\), \\(\:0435\
+\:0433\\), \\(``\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$2", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}, {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           LineBox[{
+             DynamicLocation["VertexID$3", Automatic, Center], 
+             DynamicLocation["VertexID$1", Automatic, Center]}]], {
+           GrayLevel[0.5], 
+           Dashing[{Small, Small}]}, StripOnInput -> False], "DynamicName", 
+         BoxID -> "EdgeLabelID$3"], 
+        InsetBox[
+         FormBox[
+          StyleBox["\"\\!\\(\\*SubscriptBox[\\(l\\), \\(\:0445\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$3", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}, {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           LineBox[{
+             DynamicLocation["VertexID$3", Automatic, Center], 
+             DynamicLocation["VertexID$4", Automatic, Center]}]], {
+           GrayLevel[0.5], 
+           Dashing[{Small, Small}]}, StripOnInput -> False], "DynamicName", 
+         BoxID -> "EdgeLabelID$4"], 
+        InsetBox[
+         FormBox[
+          StyleBox["\"\\!\\(\\*SubscriptBox[\\(l\\), \\(\:043d2\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$4", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}, {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           LineBox[{
+             DynamicLocation["VertexID$4", Automatic, Center], 
+             DynamicLocation["VertexID$1", Automatic, Center]}]], {
+           GrayLevel[0.5], 
+           Dashing[{Small, Small}]}, StripOnInput -> False], "DynamicName", 
+         BoxID -> "EdgeLabelID$5"], 
+        InsetBox[
+         FormBox[
+          StyleBox["\"\\!\\(\\*SubscriptBox[\\(l\\), \\(\:043d1\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$5", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}}, {
+       Directive[
+        Hue[0.6, 0.2, 0.8], 
+        EdgeForm[
+         Directive[
+          GrayLevel[0], 
+          Opacity[0.7]]]], 
+       TagBox[{
+         TagBox[
+          StyleBox[
+           
+           DiskBox[{0.9354877084750838, 0.8689262398182578}, 
+            0.04344635931197536], 
+           RGBColor[0.94, 0.91, 0.88], StripOnInput -> False], "DynamicName", 
+          BoxID -> "VertexID$1"], 
+         InsetBox[
+          FormBox[
+           StyleBox["\:0410", 
+            Directive[
+             GrayLevel[0.5], 14], StripOnInput -> False], TraditionalForm], 
+          Offset[{0, 2}, 
+           DynamicLocation["VertexID$1", Automatic, Top]], 
+          ImageScaled[{0.5, 0}], BaseStyle -> "Graphics"]}, "DynamicName", 
+        BoxID -> "VertexLabelID$1"], 
+       TagBox[{
+         TagBox[
+          StyleBox[
+           
+           DiskBox[{1.868134506259443, 0.43483084427043}, 
+            0.04344635931197536], 
+           RGBColor[0.94, 0.91, 0.88], StripOnInput -> False], "DynamicName", 
+          BoxID -> "VertexID$2"], 
+         InsetBox[
+          FormBox[
+           StyleBox["\:0411", 
+            Directive[
+             GrayLevel[0.5], 14], StripOnInput -> False], TraditionalForm], 
+          Offset[{0, 2}, 
+           DynamicLocation["VertexID$2", Automatic, Top]], 
+          ImageScaled[{0.5, 0}], BaseStyle -> "Graphics"]}, "DynamicName", 
+        BoxID -> "VertexLabelID$2"], 
+       TagBox[{
+         TagBox[
+          StyleBox[
+           DiskBox[{0.9342052337538493, 0.}, 0.04344635931197536], 
+           RGBColor[0.94, 0.91, 0.88], StripOnInput -> False], "DynamicName", 
+          BoxID -> "VertexID$3"], 
+         InsetBox[
+          FormBox[
+           StyleBox["\:0412", 
+            Directive[
+             GrayLevel[0.5], 14], StripOnInput -> False], TraditionalForm], 
+          Offset[{0, 2}, 
+           DynamicLocation["VertexID$3", Automatic, Top]], 
+          ImageScaled[{0.5, 0}], BaseStyle -> "Graphics"]}, "DynamicName", 
+        BoxID -> "VertexLabelID$3"], 
+       TagBox[{
+         TagBox[
+          StyleBox[
+           DiskBox[{0., 0.4354268069667622}, 0.04344635931197536], 
+           RGBColor[0.94, 0.91, 0.88], StripOnInput -> False], "DynamicName", 
+          BoxID -> "VertexID$4"], 
+         InsetBox[
+          FormBox[
+           StyleBox["\:0410\:0422\:041f", 
+            Directive[
+             GrayLevel[0.5], 14], StripOnInput -> False], TraditionalForm], 
+          Offset[{0, 2}, 
+           DynamicLocation["VertexID$4", Automatic, Top]], 
+          ImageScaled[{0.5, 0}], BaseStyle -> "Graphics"]}, "DynamicName", 
+        BoxID -> "VertexLabelID$4"]}}], $CellContext`flag}, 
+    TagBox[
+     DynamicBox[GraphComputation`NetworkGraphicsBox[
+      3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
+      CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
+       SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
+      ImageSizeCache->{{27.90019296027716, 
+       324.99999999999994`}, {-91.23999999999995, 70.56410570639235}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False,
+    UnsavedVariables:>{$CellContext`flag}]],
+  DefaultBaseStyle->{
+   "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> Hue[0.8, 1., 0.6]},
+  FrameTicks->None,
+  ImagePadding->30]], "Output",
+ CellChangeTimes->{3.5798554185636787`*^9}]
+}, Open  ]],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.5798553164335356`*^9, 3.579855416993676*^9}}],
+
+Cell["\<\
+\:0412\:044b\:0433\:043b\:044f\:0434\:0438\:0442 \:0445\:043e\:0440\:043e\
+\:0448\:043e, \:043d\:043e \:043d\:0435 \:043e\:0447\:0435\:043d\:044c \:043f\
+\:043e\:043d\:044f\:0442\:043d\:043e. \:041d\:043e \:0430\:0432\:0442\:043e\
+\:0440 \:043d\:0435 \:043c\:043e\:0436\:0435\:0442 \:0443\:043b\:0443\:0447\
+\:0448\:0438\:0442\:044c \:0432\:043d\:0435\:0448\:043d\:0438\:0439 \:0432\
+\:0438\:0434 \:0433\:0440\:0430\:0444\:0430 \:0432 \:0441\:0438\:043b\:0443 \
+\:0441\:0432\:043e\:0435\:0439 \:043d\:0435\:043a\:043e\:043c\:043f\:0435\
+\:0442\:0435\:043d\:0442\:043d\:043e\:0441\:0442\:0438.\
+\>", "Text",
+ CellChangeTimes->{{3.5768311828957267`*^9, 3.5768312313494115`*^9}, {
+  3.5768325508797293`*^9, 3.576832615510643*^9}}],
+
+Cell[TextData[{
+ "\:0410\:0432\:0442\:043e\:043c\:043e\:0431\:0438\:043b\:0438 \:0434\:043e\
+\:043b\:0436\:043d\:044b \:043f\:0435\:0440\:0435\:0432\:0435\:0437\:0442\
+\:0438 \:0433\:0440\:0443\:0437\:044b \:043c\:0430\:0441\:0441\:043e\:0439 \
+300\:0442. \:043d\:0430 \
+\:043c\:0430\:044f\:0442\:043d\:0438\:043a\:043e\:0432\:043e\:043c \:043c\
+\:0430\:0440\:0448\:0440\:0443\:0442\:0435 \:0441 \:043e\:0431\:0440\:0430\
+\:0442\:043d\:044b\:043c \:043d\:0435\:043f\:043e\:043b\:043d\:043e\:0441\
+\:0442\:044c\:044e \:0433\:0440\:0443\:0436\:0435\:043d\:044b\:043c \:043f\
+\:0440\:043e\:0431\:0435\:0433\:043e\:043c: \nq=5\:0442; \n",
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["l", "\:0435\:0433", "'"], TraditionalForm]]],
+ "=25\:043a\:043c; \n",
+ Cell[BoxData[
+  FormBox[
+   SubsuperscriptBox["l", "\:0435\:0433", "''"], TraditionalForm]]],
+ "=15\:043a\:043c; \n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Gamma]", "\:0441\:04421"], TraditionalForm]]],
+ "=1; \n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Gamma]", "\:0441\:04422"], TraditionalForm]]],
+ "=1; ",
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["l", "\:0445"], TraditionalForm]]],
+ "=10\:043a\:043c;\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["t", "\:043f"], TraditionalForm]]],
+ "=15\:043c\:0438\:043d;\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["t", "\:0440"], TraditionalForm]]],
+ "=18\:043c\:0438\:043d;\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["V", "\:0442\:0435\:0445"], TraditionalForm]]],
+ "=25\:043a\:043c/\:0447;\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["T", "\:043c"], TraditionalForm]]],
+ "=9,3\:0447.\n\:041e\:043f\:0440\:0435\:0434\:0435\:043b\:0438\:0442\:044c \
+\:043d\:0435\:043e\:0431\:0445\:043e\:0434\:0438\:043c\:043e\:0435 \:043a\
+\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e \:0430\:0432\:0442\
+\:043e\:043c\:043e\:0431\:0438\:043b\:0435\:0439 \:0434\:043b\:044f \:043f\
+\:0435\:0440\:0435\:0432\:043e\:0437\:043a\:0438 \:043f\:0440\:043e\:0434\
+\:0443\:043a\:0446\:0438\:0438 \:0438 \:043a\:043e\:044d\:0444\:0444\:0438\
+\:0446\:0438\:0435\:043d\:0442 \:0438\:0441\:043f\:043e\:043b\:044c\:0437\
+\:043e\:0432\:0430\:043d\:0438\:044f \:043f\:0440\:043e\:0431\:0435\:0433\
+\:0430 \:0437\:0430 1 \:043e\:0431\:043e\:0440\:043e\:0442."
+}], "Text",
+ CellChangeTimes->{
+  3.576829609521763*^9, {3.5798564428661127`*^9, 3.5798564550861297`*^9}}],
+
+Cell["\<\
+1. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:0432\:0440\
+\:0435\:043c\:044f \:043e\:0431\:043e\:0440\:043e\:0442\:0430 \:0430\:0432\
+\:0442\:043e\:043c\:043e\:0431\:0438\:043b\:044f, \:0447:\
+\>", "Text",
+ CellChangeTimes->{{3.5768225788077435`*^9, 3.576822603471387*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   SubscriptBox["t", "\:043e"], "=", 
+   RowBox[{
+    SubscriptBox["t", "\:0434\:0432"], "+", 
+    RowBox[{"\[Sum]", 
+     SubscriptBox["t", 
+      RowBox[{"\:043f", "-", "\:0440"}]]}]}]}],
+  FontSize->16]], "Input",
+ CellChangeTimes->{{3.576823393604347*^9, 3.5768234237352204`*^9}},
+ FontSize->14],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   SubscriptBox["t", "\:043e"], "=", " ", 
+   RowBox[{
+    SubscriptBox["t", "\:043f"], "+", 
+    FractionBox[
+     SubsuperscriptBox["l", "\:0435\:0433", "'"], 
+     SubscriptBox["V", "\:0442\:0435\:0445"]], "+", 
+    SubscriptBox["t", "\:0440"], "+", 
+    SubscriptBox["t", "\:043f"], "+", 
+    FractionBox[
+     SubsuperscriptBox["l", "\:0435\:0433", "''"], 
+     SubscriptBox["V", "\:0442\:0435\:0445"]], "+", 
+    SubscriptBox["t", "\:0440"], "+", 
+    FractionBox[
+     SubscriptBox["l", "\:0445"], 
+     SubscriptBox["V", "\:0442\:0435\:0445"]]}]}],
+  FontSize->16]], "Input",
+ CellChangeTimes->{{3.5768234370264435`*^9, 3.576823588136771*^9}},
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:0412\:0440\:0435\:043c\:044f\:041e\:0431\:043e\:0440\:043e\:0442\
+\:0430", "=", 
+  RowBox[{"0.25", "+", 
+   FractionBox["25", "25"], "+", "0.3", "+", "0.25", "+", 
+   FractionBox["15", "25"], "+", "0.3", "+", 
+   FractionBox["10", "25"]}]}]], "Input",
+ CellChangeTimes->{{3.57682360259241*^9, 3.5768236699315643`*^9}, {
+   3.5768237040148306`*^9, 3.576823763320548*^9}, {3.579856157335713*^9, 
+   3.579856183055749*^9}, 3.579857632367778*^9, 3.579857679087843*^9, 
+   3.57985786969911*^9},
+ FontSize->14],
+
+Cell[BoxData["3.0999999999999996`"], "Output",
+ CellChangeTimes->{3.5768237648805513`*^9},
+ FontSize->14]
+}, Open  ]],
+
+Cell["\<\
+2. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:043a\:043e\
+\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e \:043e\:0431\:043e\:0440\
+\:043e\:0442\:043e\:0432:\
+\>", "Text",
+ CellChangeTimes->{{3.576823779361804*^9, 3.576823794912238*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   SubscriptBox["n", "\:043e"], "=", 
+   FractionBox[
+    SubscriptBox["T", "\:043c"], 
+    SubscriptBox["t", "\:043e"]]}],
+  FontSize->16]], "Input",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:041e\
+\:0431\:043e\:0440\:043e\:0442\:043e\:04322", "=", 
+  RowBox[{"Round", "[", 
+   FractionBox["9.3", "3.1"], "]"}]}]], "Input",
+ CellChangeTimes->{{3.576824034220564*^9, 3.576824094157374*^9}, 
+   3.5798562270458107`*^9, 3.5798563506459837`*^9},
+ FontSize->14],
+
+Cell[BoxData["3"], "Output",
+ CellChangeTimes->{{3.576824075977087*^9, 3.57682409569619*^9}, 
+   3.579856549936262*^9},
+ FontSize->14]
+}, Open  ]],
+
+Cell["\<\
+3. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:043a\:043e\
+\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e \:0435\:0437\:0434\:043e\
+\:043a:\
+\>", "Text",
+ CellChangeTimes->{{3.5768241113240857`*^9, 3.576824135854743*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   SubscriptBox["n", "\:0435"], "=", 
+   RowBox[{"2", "\[Times]", 
+    SubscriptBox["n", "\:043e"]}]}],
+  FontSize->16]], "Input",
+ CellChangeTimes->{{3.576824604323471*^9, 3.5768246251683283`*^9}},
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:0415\
+\:0437\:0434\:043e\:043a2", "=", 
+  RowBox[{
+  "2", "\[Times]", 
+   "\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:041e\:0431\
+\:043e\:0440\:043e\:0442\:043e\:04322"}]}]], "Input",
+ CellChangeTimes->{{3.576824637707957*^9, 3.576824661713606*^9}, {
+  3.5798562794158835`*^9, 3.579856281045886*^9}, {3.57985634831598*^9, 
+  3.579856348875981*^9}},
+ FontSize->14],
+
+Cell[BoxData["6"], "Output",
+ CellChangeTimes->{3.5768246637260094`*^9},
+ FontSize->14]
+}, Open  ]],
+
+Cell["\<\
+4. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:043f\:0440\
+\:043e\:0438\:0437\:0432\:043e\:0434\:0438\:0442\:0435\:043b\:044c\:043d\:043e\
+\:0441\:0442\:044c \:0430\:0432\:0442\:043e\:043c\:043e\:0431\:0438\:043b\
+\:044f, \:0442:\
+\>", "Text",
+ CellChangeTimes->{{3.576824672493225*^9, 3.576824694970071*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   SubscriptBox["Q", "\:0441\:0443\:0442"],
+   FontSize->16], 
+  StyleBox["=",
+   FontSize->16], 
+  RowBox[{
+   StyleBox["q",
+    FontSize->16], 
+   StyleBox["\[Times]",
+    FontSize->16], 
+   RowBox[{
+    StyleBox["\[Sum]",
+     FontSize->16], 
+    RowBox[{
+     SubscriptBox["\[Gamma]", "\:0441\:0442"], 
+     StyleBox["\[Times]",
+      FontSize->16], 
+     StyleBox[
+      SubscriptBox["n", "\:0435"],
+      FontSize->16]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.576824720639388*^9, 3.5768247208889885`*^9}, {
+  3.5795099667942123`*^9, 3.579509983164235*^9}},
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:0421\:0443\:0442\:043e\:0447\:043d\:044b\:0439\:041e\:0431\:044a\
+\:0451\:043c\:041f\:0435\:0440\:0435\:0432\:043e\:0437\:043a\:04382", "=", 
+  RowBox[{"5", "\[Times]", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", "1"}], ")"}], "\[Times]", 
+   "\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:041e\:0431\
+\:043e\:0440\:043e\:0442\:043e\:04322"}]}]], "Input",
+ CellChangeTimes->{{3.576825168125761*^9, 3.5768251853481913`*^9}, {
+   3.5768252246290603`*^9, 3.5768252324602737`*^9}, {3.5768266605987835`*^9, 
+   3.576826673983607*^9}, {3.5798563545259886`*^9, 3.5798563777760215`*^9}, {
+   3.5798564754561577`*^9, 3.5798564900961785`*^9}, {3.5798565304762354`*^9, 
+   3.579856544496255*^9}, 3.5798565980063295`*^9, {3.579856649096401*^9, 
+   3.5798566510664043`*^9}},
+ FontSize->14],
+
+Cell[BoxData["30"], "Output",
+ CellChangeTimes->{3.5768251871577945`*^9, 3.5768252328190746`*^9, 
+  3.576826678492015*^9, 3.5798565521162653`*^9},
+ FontSize->14]
+}, Open  ]],
+
+Cell["\<\
+5. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:043d\:0435\
+\:043e\:0431\:0445\:043e\:0434\:0438\:043c\:043e\:0435 \:043a\:043e\:043b\
+\:0438\:0447\:0435\:0441\:0442\:0432\:043e \:0430\:0432\:0442\:043e\:043c\
+\:043e\:0431\:0438\:043b\:0435\:0439:\
+\>", "Text",
+ CellChangeTimes->{{3.5768252390122857`*^9, 3.576825260181523*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"A", "=", 
+   FractionBox["Q", 
+    SubscriptBox["Q", "\:0441\:0443\:0442"]]}],
+  FontSize->16]], "Input",
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:0410\
+\:0432\:0442\:043e\:043c\:043e\:0431\:0438\:043b\:0435\:04392", "=", 
+  FractionBox["300", 
+   "\:0421\:0443\:0442\:043e\:0447\:043d\:044b\:0439\:041e\:0431\:044a\:0451\
+\:043c\:041f\:0435\:0440\:0435\:0432\:043e\:0437\:043a\:04382"]}]], "Input",
+ CellChangeTimes->{{3.57682528142876*^9, 3.5768253044232006`*^9}, {
+  3.576826682548022*^9, 3.5768266870096292`*^9}, {3.579856643646394*^9, 
+  3.5798566536664076`*^9}, {3.5798567751365776`*^9, 3.5798567785965824`*^9}},
+ FontSize->14],
+
+Cell[BoxData["10"], "Output",
+ CellChangeTimes->{3.5768253062952037`*^9, 3.5768266891000333`*^9},
+ FontSize->14]
+}, Open  ]],
+
+Cell["\<\
+6. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:043a\:043e\
+\:044d\:0444\:0444\:0438\:0446\:0438\:0435\:043d\:0442 \:0438\:0441\:043f\
+\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:043d\:0438\:044f \:043f\:0440\
+\:043e\:0431\:0435\:0433\:0430 \:0437\:0430 1 \:043e\:0431\:043e\:0440\:043e\
+\:0442:\
+\>", "Text",
+ CellChangeTimes->{{3.5768253121920137`*^9, 3.5768253471058755`*^9}, 
+   3.5768276897023907`*^9}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"\[Beta]", "=", " ", 
+   FractionBox[
+    RowBox[{
+     SubsuperscriptBox["l", "\:0435\:0433", "'"], "+", 
+     SubsuperscriptBox["l", "\:0435\:0433", "''"]}], 
+    RowBox[{"2", "\[Times]", 
+     SubsuperscriptBox["l", "\:0435\:0433", "'"]}]]}],
+  FontSize->16]], "Input",
+ CellChangeTimes->{{3.576825457132869*^9, 3.5768255257885895`*^9}},
+ FontSize->14],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[Beta]2", "=", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"25", "+", "15"}], 
+    RowBox[{"2", "\[Times]", "25"}]], "//", "N"}]}]], "Input",
+ CellChangeTimes->{{3.576825540405815*^9, 3.5768255994363184`*^9}, 
+   3.5798588458204765`*^9, 3.579858896820548*^9},
+ FontSize->14],
+
+Cell[BoxData["0.8`"], "Output",
+ CellChangeTimes->{{3.5768255925723066`*^9, 3.57682560024752*^9}},
+ FontSize->14]
+}, Open  ]],
+
+Cell[" ", "Text",
+ Editable->False,
+ Selectable->False,
+ CellFrame->{{0, 0}, {0, 2}},
+ ShowCellBracket->False,
+ CellMargins->{{0, 0}, {1, 1}},
+ CellElementSpacings->{"CellMinHeight"->1},
+ CellFrameMargins->0,
+ CellFrameColor->RGBColor[0, 0, 1],
+ CellSize->{Inherited, 4}],
+
+Cell[TextData[{
+ StyleBox["\:041c\:0430\:044f\:0442\:043d\:0438\:043a\:043e\:0432\:044b\:0439 \
+\:043c\:0430\:0440\:0448\:0440\:0443\:0442 \:0441 \:043e\:0431\:0440\:0430\
+\:0442\:043d\:044b\:043c \:043f\:043e\:043b\:043d\:043e\:0441\:0442\:044c\
+\:044e \:0433\:0440\:0443\:0436\:0435\:043d\:044b\:043c \:043f\:0440\:043e\
+\:0431\:0435\:0433\:043e\:043c",
+  FontWeight->"Bold"],
+ "."
+}], "Text",
+ CellChangeTimes->{{3.5768256478276033`*^9, 3.5768256848308687`*^9}, {
+  3.5768257185113277`*^9, 3.5768259057428565`*^9}, {3.5768259572697473`*^9, 
+  3.5768259802953873`*^9}, {3.576826056845523*^9, 3.576826141662872*^9}, {
+  3.576832652857108*^9, 3.5768326539959106`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Graph", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"\:0410", "\[DirectedEdge]", "\:0411"}], ",", 
+     RowBox[{"\:0411", "\[DirectedEdge]", "\:0410"}], ",", 
+     RowBox[{"\:0410\:0422\:041f", "\[DirectedEdge]", "\:0410"}], ",", 
+     RowBox[{"\:0410", "\[DirectedEdge]", "\:0410\:0422\:041f"}]}], "}"}], 
+   ",", "\[IndentingNewLine]", 
+   RowBox[{"EdgeLabels", "\[Rule]", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"\:0410", "\[DirectedEdge]", "\:0411"}], "\[Rule]", 
+       "\"\<\!\(TraditionalForm\`\*SubscriptBox[\(l\), \
+\(\:0435\:0433\)]\)\>\""}], ",", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"\:0411", "\[DirectedEdge]", "\:0410"}], "\[Rule]", " ", 
+       "\"\<\!\(\*SubscriptBox[\(l\), \(\:0435\:0433\)]\)\>\""}], ",", " ", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"\:0410\:0422\:041f", "\[DirectedEdge]", "\:0410"}], "\[Rule]",
+        " ", "\"\<\!\(\*SubscriptBox[\(l\), \(\:043d1\)]\)\>\""}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"\:0410", "\[DirectedEdge]", "\:0410\:0422\:041f"}], "\[Rule]",
+        " ", "\"\<\!\(\*SubscriptBox[\(l\), \(\:043d2\)]\)\>\""}]}], 
+     "\[IndentingNewLine]", "}"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"GraphLayout", "\[Rule]", "\"\<CircularEmbedding\>\""}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"EdgeStyle", "\[Rule]", " ", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{"\:0410", "\[DirectedEdge]", "\:0411"}], "\[Rule]", 
+       RowBox[{"{", "Blue", "}"}]}], ",", 
+      RowBox[{
+       RowBox[{"\:0411", "\[DirectedEdge]", "\:0410"}], "\[Rule]", 
+       RowBox[{"{", "Blue", "}"}]}], ",", 
+      RowBox[{"{", 
+       RowBox[{"Gray", ",", "Dashed"}], "}"}]}], "}"}]}], ",", " ", 
+   RowBox[{"EdgeLabelStyle", "\[Rule]", " ", 
+    RowBox[{"Directive", "[", 
+     RowBox[{"Pink", ",", "20", ",", 
+      RowBox[{"Background", "\[Rule]", " ", "White"}]}], "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"VertexStyle", "\[Rule]", "LightBrown"}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"VertexLabels", "\[Rule]", 
+    RowBox[{"Placed", "[", 
+     RowBox[{"\"\<Name\>\"", ",", "Above"}], "]"}]}], ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"VertexSize", "\[Rule]", "0.1"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"VertexLabelStyle", "\[Rule]", 
+    RowBox[{"Directive", "[", 
+     RowBox[{"Gray", ",", "14"}], "]"}]}], ",", "\[IndentingNewLine]", 
+   RowBox[{"ImagePadding", "\[Rule]", "30"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.5768326955855837`*^9, 3.576832696271985*^9}, 
+   3.5768327282052407`*^9}],
+
+Cell[BoxData[
+ GraphicsBox[
+  NamespaceBox["NetworkGraphics",
+   DynamicModuleBox[{Typeset`graph = HoldComplete[
+     Graph[{$CellContext`\:0410, $CellContext`\:0411, $CellContext`\:0410\
+\:0422\:041f}, {{{1, 2}, {2, 1}, {3, 1}, {1, 3}}, Null}, {
+      EdgeLabels -> {
+        DirectedEdge[$CellContext`\:0410\:0422\:041f, $CellContext`\:0410] -> 
+         "\!\(\*SubscriptBox[\(l\), \(\:043d1\)]\)", 
+         DirectedEdge[$CellContext`\:0411, $CellContext`\:0410] -> 
+         "\!\(\*SubscriptBox[\(l\), \(\:0435\:0433\)]\)", 
+         DirectedEdge[$CellContext`\:0410, $CellContext`\:0411] -> 
+         "\!\(TraditionalForm\`\*SubscriptBox[\(l\), \(\:0435\:0433\)]\)", 
+         DirectedEdge[$CellContext`\:0410, $CellContext`\:0410\:0422\:041f] -> 
+         "\!\(\*SubscriptBox[\(l\), \(\:043d2\)]\)"}, EdgeLabelStyle -> {
+         Directive[
+          RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]]}, 
+       EdgeStyle -> {{
+          GrayLevel[0.5], 
+          Dashing[{Small, Small}]}, 
+         DirectedEdge[$CellContext`\:0411, $CellContext`\:0410] -> {
+           RGBColor[0, 0, 1]}, 
+         DirectedEdge[$CellContext`\:0410, $CellContext`\:0411] -> {
+           RGBColor[0, 0, 1]}}, GraphLayout -> "CircularEmbedding", 
+       ImagePadding -> 30, VertexLabels -> {
+         Placed["Name", Above]}, VertexLabelStyle -> {
+         Directive[
+          GrayLevel[0.5], 14]}, VertexSize -> {0.1}, VertexStyle -> {
+         RGBColor[0.94, 0.91, 0.88]}}]], Typeset`boxes, Typeset`boxes$s2d = 
+    GraphicsGroupBox[{{
+       Arrowheads[0.035557484308341034`], 
+       Directive[
+        Opacity[0.7], 
+        Hue[0.6, 0.7, 0.5]], {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           BezierCurveBox[{
+             DynamicLocation["VertexID$1", Automatic, Center], {
+             9.325873406851315*^-16, -0.2310459239308519}, 
+             DynamicLocation["VertexID$2", Automatic, Center]}]], {
+           RGBColor[0, 0, 1]}, StripOnInput -> False], "DynamicName", BoxID -> 
+         "EdgeLabelID$1"], 
+        InsetBox[
+         FormBox[
+          StyleBox[
+          "\"\\!\\(TraditionalForm\\`\\*SubscriptBox[\\(l\\), \\(\:0435\:0433\
+\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$1", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}, {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           BezierCurveBox[{
+             DynamicLocation[
+             "VertexID$1", Automatic, Center], {-0.6659337642194738, 
+             0.3844770380345749}, 
+             DynamicLocation["VertexID$3", Automatic, Center]}]], {
+           GrayLevel[0.5], 
+           Dashing[{Small, Small}]}, StripOnInput -> False], "DynamicName", 
+         BoxID -> "EdgeLabelID$2"], 
+        InsetBox[
+         FormBox[
+          StyleBox["\"\\!\\(\\*SubscriptBox[\\(l\\), \\(\:043d2\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$2", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}, {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           BezierCurveBox[{
+             DynamicLocation[
+             "VertexID$2", Automatic, 
+              Center], {-3.774758283725532*^-16, -0.7689540760691489}, 
+             DynamicLocation["VertexID$1", Automatic, Center]}]], {
+           RGBColor[0, 0, 1]}, StripOnInput -> False], "DynamicName", BoxID -> 
+         "EdgeLabelID$3"], 
+        InsetBox[
+         FormBox[
+          StyleBox[
+          "\"\\!\\(\\*SubscriptBox[\\(l\\), \\(\:0435\:0433\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$3", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}, {
+        TagBox[
+         StyleBox[
+          ArrowBox[
+           BezierCurveBox[{
+             DynamicLocation[
+             "VertexID$3", Automatic, Center], {-0.20009163956496442`, 
+             0.11552296196542583`}, 
+             DynamicLocation["VertexID$1", Automatic, Center]}]], {
+           GrayLevel[0.5], 
+           Dashing[{Small, Small}]}, StripOnInput -> False], "DynamicName", 
+         BoxID -> "EdgeLabelID$4"], 
+        InsetBox[
+         FormBox[
+          StyleBox["\"\\!\\(\\*SubscriptBox[\\(l\\), \\(\:043d1\\)]\\)\"", 
+           Directive[
+            RGBColor[1, 0.5, 0.5], 20, Background -> GrayLevel[1]], 
+           StripOnInput -> False], TraditionalForm], 
+         DynamicLocation["EdgeLabelID$4", Automatic, 
+          Scaled[0.5]], 
+         ImageScaled[{0.5, 0.5}], BaseStyle -> "Graphics"]}}, {
+       Directive[
+        Hue[0.6, 0.2, 0.8], 
+        EdgeForm[
+         Directive[
+          GrayLevel[0], 
+          Opacity[0.7]]]], 
+       TagBox[{
+         TagBox[
+          StyleBox[
+           
+           DiskBox[{-0.8660254037844384, -0.4999999999999994}, 
+            0.08660254037844384], 
+           RGBColor[0.94, 0.91, 0.88], StripOnInput -> False], "DynamicName", 
+          BoxID -> "VertexID$1"], 
+         InsetBox[
+          FormBox[
+           StyleBox["\:0410", 
+            Directive[
+             GrayLevel[0.5], 14], StripOnInput -> False], TraditionalForm], 
+          Offset[{0, 2}, 
+           DynamicLocation["VertexID$1", Automatic, Top]], 
+          ImageScaled[{0.5, 0}], BaseStyle -> "Graphics"]}, "DynamicName", 
+        BoxID -> "VertexLabelID$1"], 
+       TagBox[{
+         TagBox[
+          StyleBox[
+           
+           DiskBox[{0.8660254037844389, -0.5000000000000012}, 
+            0.08660254037844384], 
+           RGBColor[0.94, 0.91, 0.88], StripOnInput -> False], "DynamicName", 
+          BoxID -> "VertexID$2"], 
+         InsetBox[
+          FormBox[
+           StyleBox["\:0411", 
+            Directive[
+             GrayLevel[0.5], 14], StripOnInput -> False], TraditionalForm], 
+          Offset[{0, 2}, 
+           DynamicLocation["VertexID$2", Automatic, Top]], 
+          ImageScaled[{0.5, 0}], BaseStyle -> "Graphics"]}, "DynamicName", 
+        BoxID -> "VertexLabelID$2"], 
+       TagBox[{
+         TagBox[
+          StyleBox[
+           DiskBox[{1.8369701987210297`*^-16, 1.}, 0.08660254037844384], 
+           RGBColor[0.94, 0.91, 0.88], StripOnInput -> False], "DynamicName", 
+          BoxID -> "VertexID$3"], 
+         InsetBox[
+          FormBox[
+           StyleBox["\:0410\:0422\:041f", 
+            Directive[
+             GrayLevel[0.5], 14], StripOnInput -> False], TraditionalForm], 
+          Offset[{0, 2}, 
+           DynamicLocation["VertexID$3", Automatic, Top]], 
+          ImageScaled[{0.5, 0}], BaseStyle -> "Graphics"]}, "DynamicName", 
+        BoxID -> "VertexLabelID$3"]}}], $CellContext`flag}, 
+    TagBox[
+     DynamicBox[GraphComputation`NetworkGraphicsBox[
+      3, Typeset`graph, Typeset`boxes, $CellContext`flag], {
+      CachedValue :> Typeset`boxes, SingleEvaluation -> True, 
+       SynchronousUpdating -> False, TrackedSymbols :> {$CellContext`flag}},
+      ImageSizeCache->{{32.7606933090101, 
+       327.23930669098996`}, {-163.47930669098992`, 143.2393066909899}}],
+     MouseAppearanceTag["NetworkGraphics"]],
+    AllowKernelInitialization->False,
+    UnsavedVariables:>{$CellContext`flag}]],
+  DefaultBaseStyle->{
+   "NetworkGraphics", FrontEnd`GraphicsHighlightColor -> Hue[0.8, 1., 0.6]},
+  FrameTicks->None,
+  ImagePadding->30]], "Output",
+ CellChangeTimes->{3.576832731340846*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ "\:0410\:0432\:0442\:043e\:043c\:043e\:0431\:0438\:043b\:044c-\:0441\:0430\
+\:043c\:043e\:0441\:0432\:0430\:043b \:0440\:0430\:0431\:043e\:0442\:0430\
+\:043b \:043d\:0430 \:043c\:0430\:044f\:0442\:043d\:0438\:043a\:043e\:0432\
+\:043e\:043c \:043c\:0430\:0440\:0448\:0440\:0443\:0442\:0435 \:0441 \:043e\
+\:0431\:0440\:0430\:0442\:043d\:044b\:043c \:043f\:043e\:043b\:043d\:043e\
+\:0441\:0442\:044c\:044e \:0433\:0440\:0443\:0436\:0435\:043d\:044b\:043c \
+\:043f\:0440\:043e\:0431\:0435\:0433\:043e\:043c:\nq=3,5\:0442;\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["l", "\:0435\:0433"], TraditionalForm]]],
+ "=5\:043a\:043c;\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["l", "\:043d\:0443\:043b\:0435\:0432\:043e\:0439"], 
+   TraditionalForm]]],
+ "=5\:043a\:043c;\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["t", 
+    RowBox[{"\:043f", "-", "\:0440"}]], TraditionalForm]]],
+ "=12\:043c\:0438\:043d;\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Gamma]", "\:0441\:04421"], TraditionalForm]]],
+ "=1;\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["\[Gamma]", "\:0441\:04422"], TraditionalForm]]],
+ "=1;",
+ "\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["V", "\:0442\:0435\:0445"], TraditionalForm]]],
+ "=25\:043a\:043c/\:0447;\n",
+ Cell[BoxData[
+  FormBox[
+   SubscriptBox["T", "\:043c"], TraditionalForm]]],
+ "=8\:0447.\n\:041e\:043f\:0440\:0435\:0434\:0435\:043b\:0438\:0442\:044c \
+\:043a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e \:0430\:0432\
+\:0442\:043e\:043c\:043e\:0431\:0438\:043b\:0435\:0439 \:043f\:0440\:0438 \
+\:043e\:0431\:044a\:0451\:043c\:0435 \:043f\:0435\:0440\:0435\:0432\:043e\
+\:0437\:043e\:043a 385\:0442. \:0438 \:043a\:043e\:044d\:0444\:0444\:0438\
+\:0446\:0438\:0435\:043d\:0442 \:0438\:0441\:043f\:043e\:043b\:044c\:0437\
+\:043e\:0432\:0430\:043d\:0438\:044f \:043f\:0440\:043e\:0431\:0435\:0433\
+\:0430 \:0437\:0430 \:0434\:0435\:043d\:044c."
+}], "Text",
+ CellChangeTimes->{
+  3.5768326587539186`*^9, {3.579857945279216*^9, 3.579857952989227*^9}}],
+
+Cell["\<\
+1. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:0432\:0440\
+\:0435\:043c\:044f \:043e\:0431\:043e\:0440\:043e\:0442\:0430 \:0430\:0432\
+\:0442\:043e\:043c\:043e\:0431\:0438\:043b\:044f, \:0447:\
+\>", "Text",
+ CellChangeTimes->{{3.576826240880046*^9, 3.5768262642644873`*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   SubscriptBox["t", "\:043e"], "=", 
+   RowBox[{
+    FractionBox[
+     RowBox[{"2", "\[Times]", 
+      SubscriptBox["l", "\:0435\:0433"]}], 
+     SubscriptBox["V", "\:0442\:0435\:0445"]], "+", 
+    SubscriptBox["t", 
+     RowBox[{"\:043f", "-", 
+      RowBox[{"\:0440", " ", "\:0410"}]}]], "+", 
+    SubscriptBox["t", 
+     RowBox[{"\:043f", "-", 
+      RowBox[{"\:0440", " ", "\:0412"}]}]]}]}],
+  FontSize->16]], "Input",
+ CellChangeTimes->{{3.5768262869157267`*^9, 3.57682640238713*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:0412\:0440\:0435\:043c\:044f\:041e\:0431\:043e\:0440\:043e\:0442\
+\:04303", "=", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"2", "\[Times]", "5"}], "25"], "+", "0.2", "+", 
+   "0.2"}]}]], "Input",
+ CellChangeTimes->{{3.5768264186267586`*^9, 3.576826469186447*^9}, 
+   3.5798577372179246`*^9, 3.57985778375799*^9}],
+
+Cell[BoxData["0.8`"], "Output",
+ CellChangeTimes->{3.5768264731488543`*^9}]
+}, Open  ]],
+
+Cell["\<\
+2. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:043a\:043e\
+\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e \:043e\:0431\:043e\:0440\
+\:043e\:0442\:043e\:0432 \:0438 \:0435\:0437\:0434\:043e\:043a:\
+\>", "Text",
+ CellChangeTimes->{{3.576826479903666*^9, 3.576826499887301*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   SubscriptBox["n", "\:043e"], "=", 
+   FractionBox[
+    SubscriptBox["T", "\:043c"], 
+    SubscriptBox["t", "\:043e"]]}],
+  FontSize->16]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:041e\
+\:0431\:043e\:0440\:043e\:0442\:043e\:04323", "=", 
+  RowBox[{"Round", "[", 
+   FractionBox["8", "0.8"], "]"}]}]], "Input",
+ CellChangeTimes->{{3.57682651617373*^9, 3.5768265560473995`*^9}, 
+   3.5798577878479958`*^9, 3.579857850809084*^9}],
+
+Cell[BoxData["10"], "Output",
+ CellChangeTimes->{{3.5768265399949713`*^9, 3.5768265571550016`*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{
+   SubscriptBox["n", "\:0435"], "=", 
+   RowBox[{"2", "\[Times]", 
+    SubscriptBox["n", "\:043e"]}]}],
+  FontSize->16]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:0415\
+\:0437\:0434\:043e\:043a3", "=", 
+  RowBox[{
+  "2", "\[Times]", 
+   "\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:041e\:0431\
+\:043e\:0440\:043e\:0442\:043e\:04323"}]}]], "Input",
+ CellChangeTimes->{{3.576826572162228*^9, 3.576826593924266*^9}, {
+  3.579857804788019*^9, 3.5798578061280212`*^9}, {3.5798578519090853`*^9, 
+  3.5798578527090864`*^9}}],
+
+Cell[BoxData["20"], "Output",
+ CellChangeTimes->{3.5768265954374685`*^9}]
+}, Open  ]],
+
+Cell["3. \:041e\:0431\:044a\:0451\:043c \:043f\:0435\:0440\:0435\:0432\:043e\
+\:0437\:043a\:0438 \:0433\:0440\:0443\:0437\:0430, \:0442:", "Text",
+ CellChangeTimes->{{3.5768266028942823`*^9, 3.5768266203351126`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   SubscriptBox["Q", "\:0441\:0443\:0442"],
+   FontSize->16], 
+  StyleBox["=",
+   FontSize->16], 
+  RowBox[{
+   StyleBox["q",
+    FontSize->16], 
+   StyleBox["\[Times]",
+    FontSize->16], 
+   RowBox[{"\[Sum]", 
+    RowBox[{
+     SubscriptBox["\[Gamma]", "\:0441\:0442"], 
+     StyleBox["\[Times]",
+      FontSize->16], 
+     StyleBox[
+      SubscriptBox["n", "\:0435"],
+      FontSize->16]}]}]}]}]], "Input",
+ CellChangeTimes->{{3.5795100214142885`*^9, 3.579510023064291*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:0421\:0443\:0442\:043e\:0447\:043d\:044b\:0439\:041e\:0431\:044a\
+\:0451\:043c\:041f\:0435\:0440\:0435\:0432\:043e\:0437\:043a\:04383", "=", 
+  RowBox[{"3.5", "\[Times]", 
+   RowBox[{"(", 
+    RowBox[{"1", "+", "1"}], ")"}], "\[Times]", 
+   "\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:041e\:0431\
+\:043e\:0440\:043e\:0442\:043e\:04323"}]}]], "Input",
+ CellChangeTimes->{{3.576826740580124*^9, 3.5768268087210436`*^9}, {
+   3.57682729040409*^9, 3.5768272961916995`*^9}, {3.5798578999791527`*^9, 
+   3.579857901699155*^9}, {3.5798579643092422`*^9, 3.579857995279286*^9}, {
+   3.579858088749417*^9, 3.5798580982094297`*^9}, 3.5798581612095184`*^9, {
+   3.579858436689904*^9, 3.5798584375499053`*^9}, {3.579858506580002*^9, 
+   3.579858507490003*^9}}],
+
+Cell[BoxData["70.`"], "Output",
+ CellChangeTimes->{{3.576826770251376*^9, 3.576826776179386*^9}, 
+   3.576826809625845*^9, 3.576827298141703*^9}]
+}, Open  ]],
+
+Cell["\<\
+4. \:041d\:0435\:043e\:0431\:0445\:043e\:0434\:0438\:043c\:043e\:0435 \:043a\
+\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e \:0430\:0432\:0442\
+\:043e\:043c\:043e\:0431\:0438\:043b\:0435\:0439 \:0434\:043b\:044f \:043f\
+\:0435\:0440\:0435\:0432\:043e\:0437\:043a\:0438 \:0433\:0440\:0443\:0437\
+\:043e\:0432:\
+\>", "Text",
+ CellChangeTimes->{{3.5768273159569345`*^9, 3.5768273250049505`*^9}, {
+   3.576827356392205*^9, 3.5768273713994317`*^9}, 3.576827506433269*^9}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"A", "=", 
+   FractionBox["Q", 
+    SubscriptBox["Q", "\:0441\:0443\:0442"]]}],
+  FontSize->16]], "Input"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:0410\
+\:0432\:0442\:043e\:043c\:043e\:0431\:0438\:043b\:0435\:04393", "=", 
+  RowBox[{
+   RowBox[{"Round", "[", 
+    FractionBox["385", 
+     "\:0421\:0443\:0442\:043e\:0447\:043d\:044b\:0439\:041e\:0431\:044a\:0451\
+\:043c\:041f\:0435\:0440\:0435\:0432\:043e\:0437\:043a\:04383"], "]"}], "//", 
+   "N"}]}]], "Input",
+ CellChangeTimes->{{3.5768275216276956`*^9, 3.57682759248302*^9}, 
+   3.579857975459258*^9, 3.579858085889413*^9, {3.579858375189818*^9, 
+   3.5798583770298204`*^9}}],
+
+Cell[BoxData["6.`"], "Output",
+ CellChangeTimes->{{3.5768275574141583`*^9, 3.5768275938090224`*^9}}]
+}, Open  ]],
+
+Cell["\<\
+5. \:041e\:043f\:0440\:0435\:0434\:0435\:043b\:044f\:0435\:043c \:043a\:043e\
+\:044d\:0444\:0444\:0438\:0446\:0438\:0435\:043d\:0442 \:0438\:0441\:043f\
+\:043e\:043b\:044c\:0437\:043e\:0432\:0430\:043d\:0438\:044f \:043f\:0440\
+\:043e\:0431\:0435\:0433\:0430 \:0437\:0430 \:043e\:0434\:0438\:043d \:0434\
+\:0435\:043d\:044c:\
+\>", "Text",
+ CellChangeTimes->{{3.5768276302974863`*^9, 3.576827684101981*^9}}],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"\[Beta]", "=", 
+   FractionBox[
+    RowBox[{"2", "\[Times]", 
+     SubscriptBox["n", "\:043e"], "\[Times]", 
+     SubscriptBox["l", "\:0435\:0433"]}], 
+    RowBox[{
+     RowBox[{"2", "\[Times]", 
+      SubscriptBox["n", "\:043e"], "\[Times]", 
+      SubscriptBox["l", "\:0435\:0433"]}], "+", 
+     RowBox[{"2", "\[Times]", 
+      SubscriptBox["l", "\:043d"]}]}]]}],
+  FontSize->16]], "Input",
+ CellChangeTimes->{{3.576827710856028*^9, 3.576827790634568*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[Beta]3", "=", 
+  RowBox[{
+   FractionBox[
+    RowBox[{
+    "2", "\[Times]", 
+     "\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:041e\:0431\
+\:043e\:0440\:043e\:0442\:043e\:04323", "\[Times]", "5"}], 
+    RowBox[{
+     RowBox[{
+     "2", "\[Times]", 
+      "\:041a\:043e\:043b\:0438\:0447\:0435\:0441\:0442\:0432\:043e\:041e\
+\:0431\:043e\:0440\:043e\:0442\:043e\:04323", "\[Times]", "5"}], "+", 
+     RowBox[{"2", "\[Times]", "5"}]}]], "//", "N"}]}]], "Input",
+ CellChangeTimes->{{3.5768278079505987`*^9, 3.5768278780571213`*^9}, 
+   3.5798585020099955`*^9, 3.579858836090463*^9}],
+
+Cell[BoxData["0.9090909090909091`"], "Output",
+ CellChangeTimes->{{3.5768278705379086`*^9, 3.576827878774723*^9}}]
+}, Open  ]]
+},
+WindowSize->{707, 817},
+WindowMargins->{{Automatic, 154}, {Automatic, 25}},
+FrontEndVersion->"9.0 for Microsoft Windows (32-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 558, 10, 30, "Text"],
+Cell[CellGroupData[{
+Cell[1140, 34, 3055, 63, 312, "Input"],
+Cell[4198, 99, 15668, 314, 367, 7597, 181, "CachedBoxData", "BoxData", \
+"Output"]
+}, Open  ]],
+Cell[19881, 416, 2860, 53, 185, "Text"],
+Cell[22744, 471, 369, 6, 30, "Text"],
+Cell[23116, 479, 408, 13, 54, "Input"],
+Cell[CellGroupData[{
+Cell[23549, 496, 344, 8, 47, "Input"],
+Cell[23896, 506, 90, 2, 32, "Output"]
+}, Open  ]],
+Cell[24001, 511, 534, 9, 30, "Text"],
+Cell[24538, 522, 269, 9, 53, "Input"],
+Cell[CellGroupData[{
+Cell[24832, 535, 434, 9, 50, "Input"],
+Cell[25269, 546, 107, 2, 32, "Output"]
+}, Open  ]],
+Cell[25391, 551, 462, 7, 30, "Text"],
+Cell[25856, 560, 320, 9, 33, "Input"],
+Cell[CellGroupData[{
+Cell[26201, 573, 614, 11, 31, "Input"],
+Cell[26818, 586, 110, 2, 32, "Output"]
+}, Open  ]],
+Cell[26943, 591, 528, 9, 30, "Text"],
+Cell[27474, 602, 226, 7, 54, "Input"],
+Cell[CellGroupData[{
+Cell[27725, 613, 545, 9, 50, "Input"],
+Cell[28273, 624, 114, 2, 32, "Output"]
+}, Open  ]],
+Cell[28402, 629, 378, 7, 30, "Text"],
+Cell[28783, 638, 292, 9, 54, "Input"],
+Cell[CellGroupData[{
+Cell[29100, 651, 230, 6, 47, "Input"],
+Cell[29333, 659, 112, 2, 32, "Output"]
+}, Open  ]],
+Cell[29460, 664, 271, 9, 8, "Text"],
+Cell[29734, 675, 524, 10, 30, "Text"],
+Cell[CellGroupData[{
+Cell[30283, 689, 3172, 67, 344, "Input"],
+Cell[33458, 758, 8928, 211, 228, "Output"]
+}, Open  ]],
+Cell[42401, 972, 94, 1, 31, "Input"],
+Cell[42498, 975, 737, 11, 49, "Text"],
+Cell[43238, 988, 2368, 57, 286, "Text"],
+Cell[45609, 1047, 303, 5, 30, "Text"],
+Cell[45915, 1054, 335, 11, 42, "Input"],
+Cell[46253, 1067, 702, 20, 56, "Input"],
+Cell[CellGroupData[{
+Cell[46980, 1091, 530, 11, 47, "Input"],
+Cell[47513, 1104, 105, 2, 32, "Output"]
+}, Open  ]],
+Cell[47633, 1109, 268, 5, 30, "Text"],
+Cell[47904, 1116, 201, 8, 53, "Input"],
+Cell[CellGroupData[{
+Cell[48130, 1128, 350, 7, 47, "Input"],
+Cell[48483, 1137, 134, 3, 32, "Output"]
+}, Open  ]],
+Cell[48632, 1143, 252, 5, 30, "Text"],
+Cell[48887, 1150, 249, 8, 33, "Input"],
+Cell[CellGroupData[{
+Cell[49161, 1162, 468, 10, 31, "Input"],
+Cell[49632, 1174, 87, 2, 32, "Output"]
+}, Open  ]],
+Cell[49734, 1179, 338, 6, 30, "Text"],
+Cell[50075, 1187, 613, 24, 42, "Input"],
+Cell[CellGroupData[{
+Cell[50713, 1215, 814, 14, 31, "Input"],
+Cell[51530, 1231, 161, 3, 32, "Output"]
+}, Open  ]],
+Cell[51706, 1237, 357, 6, 30, "Text"],
+Cell[52066, 1245, 156, 6, 54, "Input"],
+Cell[CellGroupData[{
+Cell[52247, 1255, 572, 9, 50, "Input"],
+Cell[52822, 1266, 112, 2, 32, "Output"]
+}, Open  ]],
+Cell[52949, 1271, 435, 8, 30, "Text"],
+Cell[53387, 1281, 390, 11, 57, "Input"],
+Cell[CellGroupData[{
+Cell[53802, 1296, 295, 8, 47, "Input"],
+Cell[54100, 1306, 113, 2, 32, "Output"]
+}, Open  ]],
+Cell[54228, 1311, 271, 9, 8, "Text"],
+Cell[54502, 1322, 668, 12, 30, "Text"],
+Cell[CellGroupData[{
+Cell[55195, 1338, 2639, 59, 312, "Input"],
+Cell[57837, 1399, 7719, 183, 368, "Output"]
+}, Open  ]],
+Cell[65571, 1585, 2008, 48, 245, "Text"],
+Cell[67582, 1635, 303, 5, 30, "Text"],
+Cell[67888, 1642, 526, 16, 54, "Input"],
+Cell[CellGroupData[{
+Cell[68439, 1662, 336, 8, 46, "Input"],
+Cell[68778, 1672, 75, 1, 31, "Output"]
+}, Open  ]],
+Cell[68868, 1676, 306, 5, 30, "Text"],
+Cell[69177, 1683, 186, 7, 53, "Input"],
+Cell[CellGroupData[{
+Cell[69388, 1694, 332, 6, 46, "Input"],
+Cell[69723, 1702, 99, 1, 31, "Output"]
+}, Open  ]],
+Cell[69837, 1706, 166, 6, 33, "Input"],
+Cell[CellGroupData[{
+Cell[70028, 1716, 458, 9, 31, "Input"],
+Cell[70489, 1727, 73, 1, 31, "Output"]
+}, Open  ]],
+Cell[70577, 1731, 216, 2, 30, "Text"],
+Cell[70796, 1735, 513, 20, 37, "Input"],
+Cell[CellGroupData[{
+Cell[71334, 1759, 792, 13, 31, "Input"],
+Cell[72129, 1774, 145, 2, 31, "Output"]
+}, Open  ]],
+Cell[72289, 1779, 485, 8, 30, "Text"],
+Cell[72777, 1789, 141, 5, 54, "Input"],
+Cell[CellGroupData[{
+Cell[72943, 1798, 570, 11, 48, "Input"],
+Cell[73516, 1811, 100, 1, 31, "Output"]
+}, Open  ]],
+Cell[73631, 1815, 416, 7, 30, "Text"],
+Cell[74050, 1824, 494, 14, 54, "Input"],
+Cell[CellGroupData[{
+Cell[74569, 1842, 623, 15, 48, "Input"],
+Cell[75195, 1859, 114, 1, 31, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
